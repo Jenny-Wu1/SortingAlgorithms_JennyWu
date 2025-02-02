@@ -14,4 +14,12 @@ public class InsertionSort implements SortingAlgorithms {
         }
         return input;
     }
+
+    public static void main(String[] args) {
+        InsertionSort sorter = new InsertionSort();
+        int[] input = {5, 7, 1, 9, 3, 2, 6};
+        System.out.println("Input: " + Arrays.toString(input));
+        sorter.sorty(input);
+        System.out.println("Output: " + Arrays.toString(input));
+    }
 }
