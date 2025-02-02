@@ -16,4 +16,12 @@ public class SelectionSort implements SortingAlgorithms {
         }
         return input;
     }
+
+    public static void main(String[] args) {
+        SelectionSort sorter = new SelectionSort();
+        int[] input = {5, 7, 1, 9, 3, 2, 6};
+        System.out.println("Input: " + Arrays.toString(input));
+        sorter.sorty(input);
+        System.out.println("Output: " + Arrays.toString(input));
+    }
 }
