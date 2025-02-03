@@ -18,4 +18,12 @@ public class Tester {
         long endTime = System.nanoTime();
         return endTime - startTime;
     }
+
+    public void test(int iterations, int size) {
+        double totalTime = 0;
+        for (int i = 0; i < iterations; i++) {
+            totalTime += singleTest(size);
+        }
+        System.out.println(sa.getClass().getName() + " Average runtime: " + (totalTime / iterations) + " ms");
+    }
 }
