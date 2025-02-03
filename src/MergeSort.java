@@ -51,4 +51,12 @@ public class MergeSort implements SortingAlgorithms {
             merge(input, i, j, k);
         }
     }
+
+    public static void main(String[] args) {
+        MergeSort sorter = new MergeSort();
+        int[] input = {5, 7, 1, 9, 3, 2, 6};
+        System.out.println("Input: " + Arrays.toString(input));
+        sorter.sorty(input);
+        System.out.println("Output: " + Arrays.toString(input));
+    }
 }
