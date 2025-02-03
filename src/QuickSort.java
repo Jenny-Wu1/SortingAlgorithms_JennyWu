@@ -41,4 +41,12 @@ public class QuickSort implements SortingAlgorithms {
         quicksort(input, low, lowEnd);
         quicksort(input, lowEnd + 1, high);
     }
+
+    public static void main(String[] args) {
+        QuickSort sorter = new QuickSort();
+        int[] input = {5, 7, 1, 9, 3, 2, 6};
+        System.out.println("Input: " + Arrays.toString(input));
+        sorter.sorty(input);
+        System.out.println("Output: " + Arrays.toString(input));
+    }
 }
