@@ -13,9 +13,9 @@ public class Tester {
             input[i] = gen.nextInt();
         }
 
-        long startTime = System.nanoTime();
+        long startTime = System.currentTimeMillis();
         sa.sorty(input);
-        long endTime = System.nanoTime();
+        long endTime = System.currentTimeMillis();
         return endTime - startTime;
     }
 
@@ -24,6 +24,6 @@ public class Tester {
         for (int i = 0; i < iterations; i++) {
             totalTime += singleTest(size);
         }
-        System.out.println(sa.getClass().getName() + " Average runtime: " + (totalTime / iterations) + " ms");
+        System.out.print((totalTime / iterations) + " ms (avg)\n");
     }
 }
