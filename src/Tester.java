@@ -13,10 +13,10 @@ public class Tester {
             input[i] = gen.nextInt();
         }
 
-        long startTime = System.currentTimeMillis();
+        long startTime = System.nanoTime();
         sa.sorty(input);
-        long endTime = System.currentTimeMillis();
-        return endTime - startTime;
+        long endTime = System.nanoTime();
+        return (endTime - startTime)/1000000;
     }
 
     public void test(int iterations, int size) {
